@@ -17,12 +17,12 @@ body {
     margin-left: 30px;
  }
  .menu {
-    background-color:gray;
-    box-shadow: #141414;
+    background-color:rgb(36, 36, 33);
+    box-shadow: #b9afaf;
  } 
  .container {
     width: 100%;
-    background-color:gray;
+    background-color:rgba(179, 175, 124, 0.863);
     color: #c4c1c1;
     padding-bottom: 20px;
     padding: 50px 20px 10px 20px;
@@ -56,7 +56,7 @@ body {
     position: relative;
     display: block;
     text-decoration:none;
-    color: #343435;
+    color: #e9e9ec;
     font-size: 25px;
     font-style: italic;
 }
@@ -115,7 +115,226 @@ main .infoText {
     text-shadow: 2px 2px 2px #333, -2px -2px 2px #333;
 }
 .infoText h1 span {
-    color: rgb(163, 33, 10);
+    color: rgb(121, 100, 54);
     padding-left:10px ;
     display: block;
 }
+.infoText button {
+    padding: 10px 12px;
+    border: #79747b 1px solid;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #078526;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.infoText h1 span1 {
+    display: none;
+    color: rgba(116, 114, 37, 0.699);
+    padding-left:10px ;
+    
+}
+
+.infoText button:hover {
+    color: rgb(126, 126, 87);
+}
+.socialMediaIcons {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 10%;
+}
+.socialMediaIcons a i {
+    font-size: 24px;
+    padding-right: 20px;
+    color: #dedce1;
+    transition: 0.4s;
+}
+.socialMediaIcons a li:hover {
+    color: rgb(182, 182, 21);
+    transform: scale(1.2);
+}
+@media only screen and (max-width: 768px) {
+    .menu #menuBtn {
+        display: block;
+    }
+    .menu ul {
+        position: fixed;
+        width: 250px;
+        height: calc(100vh - 70px);
+        top: 70px;
+        right: -250px;
+        background-color: #232323;
+        border-radius: 30% 0% 0% 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1px solid black;
+        transition: right 0.4s cubic-bezier(1, 0.2, 0.2, 1);
+    }
+    .menu ul li {
+        padding: 20px;
+        letter-spacing: 2px;
+    }
+    .menu ul li:nth-child(1) {
+        margin-top: 30px;
+    }
+    .container .menu {
+        background-color: #232323;
+    }
+    .container main {
+        background-position: center;
+    }
+    #menuBtn.active .bar:nth-child(2) {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    #menuBtn.active .bar:nth-child(1) {
+        transform: translateX(8px) rotate(90deg);
+        
+    }
+    #menuBtn.active .bar:nth-child(3) {
+        transform: translateX(-8px) rotate(-180deg);
+        
+    }
+    .menu ul.active {
+        right: 0;
+    }
+}
+.center{
+    text-align: center;
+}
+ 
+ a {
+    text-decoration: none;
+    color: rgb(182, 182, 21);
+ }
+ .about {
+    width: 100%;
+    padding: 50px 20px 10px 20px;
+    background-color: #2b2929;
+    align-content: center;
+ }
+ .about img {
+    align-items: center;
+    height: auto;
+    width: 300px;
+    margin-left: 15px;
+ }
+ .about-text {
+    text-align: center;
+    width: 320px;
+
+ }
+ .main2 {
+    width: 100%;
+    align-content: center;
+   
+   
+ }
+ .about-text h2 {
+    color: white;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    
+ } 
+ .about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    
+ }
+ .about-text h5 span {
+    color: rgb(182, 182, 21);
+ }
+ .about-text p {
+    color: #dedce1;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    
+ }
+ #button {
+    background-color: rgb(182, 182, 21);
+    color:#fafafa;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 4s;
+    
+ }
+ #button:hover {
+    background-color: transparent;
+    border: 2px solid rgb(182, 182, 21);
+    cursor: pointer;
+ }
+ .services {
+    background-color: #101010;
+    width: 100%;
+    padding: 50px 20px 10px 20px;
+ }
+ .title h2 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+ }
+ .box {
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+ }
+ .card {
+    height: 365px;
+    width: 280px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+ }
+ .card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(235, 80, 33) ;
+ }
+ h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+ }
+ .pra p {
+    color: #dedce1;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+ }
+ .card #button {
+    background-color: rgb(223, 200, 126);;
+    color:#fafafa;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 4s;
+    
+ }
+ .card #button:hover {
+    background-color: transparent;
+    border: 2px solid rgb(233, 35, 28);
+    cursor: pointer;
+ }
